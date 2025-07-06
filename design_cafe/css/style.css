@@ -25,6 +25,10 @@
     width: 226px;    
 }
 
+main {
+    background-color: #e8d9bf;
+}
+
 .title__container {
     max-width: 1000px;
     padding: 0 10px;
@@ -144,7 +148,7 @@ h3 {
 .box {
     max-width: 1000px;
     min-height: 200px;
-    color: #fff;
+    background-color: #fff;
     border: 3.7px solid #4f260b ;
     margin-left: 10px;
     margin-right: 10px;
