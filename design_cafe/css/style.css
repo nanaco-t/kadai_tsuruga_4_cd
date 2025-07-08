@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html{
+    scroll-behavior: smooth;
+}
 
 .header__container {
     display: flex;
@@ -61,11 +64,17 @@ main {
     display: flex;
     max-width: 1000px;
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 0 auto 108px;
+    align-items: center;
+}
+
+.about-image {
+    width: 50%;
 }
 
 .about-us__rightside {
     padding-left: 74px;
+    width: 50%;
 }
 
 .about-us__images {
@@ -106,7 +115,7 @@ main {
     
 }
 
-ul {
+.menu__contanier {
     display: flex;
     justify-content: space-between;
     gap: 46px;
@@ -155,13 +164,13 @@ h3 {
 }
 
 .event__contaniers {
-    margin-top: 30px;
+    max-width: 680px;
+    margin: 30px auto 0;
 }
 
 .event__contanier {
     display: flex;
     gap: 51px;
-    margin-left: 146px;
 }
 
 .day {
@@ -175,6 +184,7 @@ h3 {
     font-size: 23px;
     text-align: left;
     text-decoration-line: underline;
+    white-space: nowrap;
 }
 
 #access {
