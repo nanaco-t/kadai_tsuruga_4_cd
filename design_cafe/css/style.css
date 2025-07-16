@@ -28,6 +28,11 @@ html{
     width: 226px;    
 }
 
+.hamburger,
+.header__nav-sp {
+    display: none;
+}
+
 main {
     background-color: #e8d9bf;
 }
@@ -236,3 +241,216 @@ iframe {
     right: 20px;
     width: 125px;
 }
+
+@media screen and (max-width: 1100px){
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .hamburger span {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        top: 14px;
+        right: 0;
+        transition: 0.3s;
+    }
+
+    .hamburger span::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        top: -14px;
+        right: 0;
+        transition: 0.3s;
+    }
+
+    .hamburger span::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        bottom: -14px;
+        right: 0;
+        transition: 0.3s;
+    }
+
+    .open span {
+        background-color: transparent;
+    }
+
+    .open span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .open span::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav-sp {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: #000000b1;
+        top: 0;
+        left: 0;
+    }
+
+    .header__nav-sp a {
+        color: #fff;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+
+    .header__nav-sp ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .maintitle {
+        font-size: 70px;
+    }
+
+    .about-us__title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .subtitle {
+        font-size: 17px;
+        padding-top: 39px;
+        padding-bottom: 23px;
+    }
+
+    .maintitle {
+        line-height: 1.16em;
+        letter-spacing: 0.2em;
+        font-size: 38px;
+        padding-bottom: 12px;
+    }
+
+    .text {
+        line-height: 1.88em;
+        letter-spacing: 0.1em;
+        font-size: 16px;
+        padding-bottom: 54px;
+    }
+
+    #about-us {
+        flex-direction: column;
+        padding: 0;
+    } 
+
+    .about-us__logo {
+        display: block;
+        width: auto;
+        height: 45px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+ }
+
+    .about-image {
+        width: 100%;
+        padding-bottom: 35px;
+    }
+
+    .about-us__rightside {
+        padding-left: none;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .about-us__title {
+    line-height: 1.25em;
+    letter-spacing: 0em;
+    font-size: 36x;
+    padding-bottom: 19px;
+ }
+
+    .about-us__text p {
+        line-height: 1.75em;
+        letter-spacing: 0em;
+        font-size: 16px;
+        padding-bottom: 48px;
+    }
+
+    .about-us__images {
+        border-bottom-right-radius: 0%;
+    }
+
+    #menu {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+    .contanier {
+        width: auto;
+        height: 45px;
+        padding-bottom: 23px;
+    }
+
+    .menu__contanier {
+        flex-direction: column;
+    }
+
+    .menu__contanier p {
+        line-height: 1.59em;
+        letter-spacing: 0em;
+        font-size: 17px;
+        padding-bottom: 57px;
+    }
+
+    .gallery__visual {
+        display: block;
+    }
+
+    .images {
+        display: none;
+    }
+    
+    #image1 {
+        display: block;
+        width: 100%;
+    }
+
+    .event__contaniers {
+        margin: 30px auto;
+    }
+
+    .event__contanier {
+        flex-direction: column;
+        gap: 0px;    
+    }
+
+    .footer__contanier {
+        flex-direction: column;
+    }
+}
+
+ @media screen and (max-width: 375px){
+    .event__contanier p {
+        line-height: 3.81em;
+        letter-spacing: 0em;
+        font-size: 16px;
+ }
