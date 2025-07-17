@@ -361,6 +361,8 @@ iframe {
     #about-us {
         flex-direction: column;
         padding: 0;
+        position: relative;
+        padding-top: 55px;
     } 
 
     .about-us__logo {
@@ -369,6 +371,10 @@ iframe {
         height: 45px;
         padding-bottom: 10px;
         margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
  }
 
     .about-image {
@@ -429,9 +435,12 @@ iframe {
         display: none;
     }
     
-    #image1 {
+    .images:first-child {
         display: block;
         width: 100%;
+    }
+    .box {
+        padding: 0 20px;
     }
 
     .event__contaniers {
@@ -443,14 +452,22 @@ iframe {
         gap: 0px;    
     }
 
+    .event__text,
+    .day {
+    line-height: 3.81em;
+    font-size: 16px;
+    }
+
+    .event__text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
     .footer__contanier {
         flex-direction: column;
     }
-}
 
- @media screen and (max-width: 375px){
-    .event__contanier p {
-        line-height: 3.81em;
-        letter-spacing: 0em;
-        font-size: 16px;
- }
+    .totop {
+        width: 100px;
+    }
+}
