@@ -11,6 +11,7 @@ html{
     padding-right: 7.6%;
     position: absolute;
     width: 100%;
+    z-index: 9999;
 }
 
 .header__nav ul {
@@ -454,7 +455,7 @@ iframe {
 
     .event__text,
     .day {
-    line-height: 3.81em;
+    line-height: 1.8em;
     font-size: 16px;
     }
 
@@ -470,4 +471,20 @@ iframe {
     .totop {
         width: 100px;
     }
+}
+
+.slick-dots {
+    bottom: 0;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+.slick-dots li button:before {
+    color: #fff;
+}
+    
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
 }
